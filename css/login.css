@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body * {
+    font-family: "Noto Sans";
+    font-size: 1.09em;
+    font-weight: 500;
+}
+
+*{
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.logoimg {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.logoimg img {
+    width: 34px;
+    height: 40px;
+    padding: 0;
+}
+
+.loginInput {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loginInput input {
+    padding: 0.54em 0.25em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.Forgot {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Forgot:hover {
+    color: #337ab7;
+}
