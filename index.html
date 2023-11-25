@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 홈페이지 http://spaypal.dothome.co.kr/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send and receive payments easily with PayPal - PayPal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+    <nav class="navbar navbar-default" id="navbar_shadow" style="padding: 8px 0;">
+        <div class="container-fluid">
+            <div class="container center" style="position: relative;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#!"><div class="logo" id="home"></div></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="dropdown">
+                        <li class="dropdown">
+                            <a href="#!" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PERSONAL<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#!">How PayPal Works</a></li>
+                                <li><a href="#!" class="ps" id="shopdeal">Shop Deals</a></li>
+                                <li><a href="#!">PayPal Fees & Payment Methods</a></li>
+                                <li><a href="#!">Buy on eBay</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#!">PayPal Buyer Protection</a></li>
+                                <li><a href="#!">PayPal App</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#!" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BUSINESS<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#!">Introduction</a></li>
+                                <li><a href="#!">How PayPal Works</a></li>
+                                <li><a href="#!">Getting Started</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#!">Solution</a></li>
+                                <li><a href="#!">Accept Payments</a></li>
+                                <li><a href="#!">Make Payments</a></li>
+                                <li><a href="#!">Manage Risk</a></li>
+                                <li><a href="#!">Streamline Operations</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#!">Pricing</a></li>
+                                <li><a href="#!">Resource Center</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="#!" class="dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BUSINESS SUPPORT<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#!">Get started for Business</a></li>
+                                <li><a href="#!">Developer Centre for Integration</a></li>
+                                <li><a href="#!">Withdrawal from PayPal</a></li>
+                                <li><a href="#!">3rd Party Partner Support</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nr collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a href="#" class="btn btn-primary" id="LI"><span>Log In</span></a>
+                    <a href="#" class="btn btn-primary" id="LO"><span>Sign Up</span></a>
+                    <span id="successLogin"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;Logged
+                        in
+                        "Admin"</span>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="login-wrapper">
+        <form class="login-container">
+            <div class="lg-header">
+                <span class="login-name">Login</span>
+                <a href="#!" id="dprtm"><span class="glyphicon glyphicon-remove"></span></a>
+            </div>
+            <input type="text" id="user_id" placeholder="Typing your id.." name="login" required>
+            <input type="password" id="user_pw" placeholder="Typing your password.." name="login" required>
+            <input type="submit" class="login-button" value="Log In" id="Loggedin" name="login"></input>
+            <input type="submit" class="back-button" value="Back to Home" id="back" name="login"></input>
+        </form>
+    </div>
+
+    <div class="container-fluid" id="mainContent">
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="source/paypal1.png" alt="p1">
+                        <div class="carousel-caption">
+                            <div class="text-left row">
+                                <div class="col-md-12">
+                                    <h1><strong><em>GROWING YOUR BUSINESS? THEN IT'S<br>TIME TO ADD PAYPAL.</em></strong></h1>
+                                </div>
+                                <div class="col-md-12">
+                                    With a PayPal Business Account, you enjoy access to 240+ million more<br>
+                                    potential customers, along with a suite of management tools, invoicing<br>
+                                    options and payment methods.
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <a href="#!" class="btn btn-primary" id="w100">Sign Up For Free</a>
+                                        </div>
+                                        <div class="col-md-12">
+                                            &nbsp;
+                                        </div>
+                                        <div class="col-md-8">
+                                            <a href="#!" class="btn btn-primary" id="w100">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="source/paypal2.png" alt="p2">
+                        <div class="carousel-caption">
+                            <div class="text-left row">
+                                <div class="col-md-12">
+                                    <h1><strong><em>BUYER PROTECTION MEANS<br>NO MORE BUY-O-PHOPIA</em></strong></h1>
+                                </div>
+                                <div class="col-md-12">
+                                    And with no Buy-o-phobia, you can enjoy the sheer bliss of retail
+                                    therapy.
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <a href="#!" class="btn btn-primary" id="w100">Sign Up Now</a>
+                                        </div>
+                                        <div class="col-md-12">&nbsp;</div>
+                                        <div class="col-md-8">
+                                            <a href="#!" class="btn btn-primary" id="w100">Learn about Buyer Protection</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="row" style="padding: 1vh 0;">
+            <h4 class="text-center">Have a query? <a href="#!" class="text-primary" style="font-weight: bold;">Click
+                    here</a> to reach Help Center
+                </p>
+        </div>
+        <div class="row grey">
+            <div class="container" id="videos">
+                <iframe id="video-auto-play" class="youtube-iframe" width="500" allowfullscreen=""
+                    sandbox="allow-scripts allow-same-origin" aria-label="Play video" height="300"
+                    src="https://www.youtube-nocookie.com/embed/e2h_ZeSxZ2U?rel=0&amp;autoplay=0&amp;autohide=2&amp;border=0&amp;wmode=opaque&amp;showinfo=0&amp;hd=1&amp;playsinline=1&amp;enablejsapi=1&amp;modestbranding=1"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="row" id="gal" style="padding-top: 8vh;">
+            <div class="container" id="custom1">
+                <div class="col-md-6" id="img1">
+                    <img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/KR/optimized/home/editorial/home_n1_1x.jpg"
+                        alt="smartphone">
+                </div>
+                <div class="col-md-6" id="caption">
+                    <h3 class="text-left">At the speed of want.</h3>
+                    <p>Millions of people around the world use PayPal for one simple reason: it's simple. Just an
+                        email
+                        and password will get you through checkout before you can reach for your wallet. </p>
+                </div>
+            </div>
+            <div class="container-fluid bg-primary" id="shoppingmode">
+                <div class="container" id="gal2">
+                    <div class="col-md-6" id="caption">
+                        <h3 class="text-left">Put your phone on shopping mode.</h3>
+                        <p>Don't miss a deal again! Shop and pay for deals on the move.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-primary">
+                <div class="container" id="gal3">
+                    <div class="col-md-6" id="caption">
+                        <h3 class="text-left">Pay anyone, anywhere.</h3>
+                        <p>Pay for your items or services more easily and more securely, simply with an email
+                            address. No matter where they are, they'll be delighted to get your payment.</p>
+
+                        <a href="#!"></a>
+                    </div>
+                    <div class="col-md-6" id="caption">
+                        <h3 class="text-left">Request payments easily.</h3>
+                        <p>Requesting a payment is a friendly reminder for a job well done. They'll get an
+                            invitation to pay any way they like without having to think about it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-primary" id="manage">
+                <div class="container">
+                    <div class="col-md-6">
+                        <h3 class="text-left">Manage your recurring payments easily</h3>
+                        <p>Whether it’s monthly subscriptions, recurring bills or instalment plans, it’s a lot
+                            easier to
+                            keep track and manage your recurring payments with Automatic Payments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="padding-top: 8vh;">
+                <div class="col-md-6" id="custom2">
+                    <img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/KR/optimized/home/editorial/home_n3_1x.jpg"
+                        alt="">
+                </div>
+                <div class="col-md-5" id="caption" style="padding-top: 10vh;">
+                    <h3>Click with your customers worldwide.</h3>
+                    <p>Start accepting payments from your customers, wherever they are. Accept credit cards, debit
+                        cards and, of course, PayPal.</p>
+                </div>
+            </div>
+            <div class="container-fluid text-center grey" style="padding: 15vh 0;">
+                <div class="container">
+                    <div class="text-center" id="caption">
+                        <h3>Take Control of your money</h3>
+                        <a href="#!" class="btn btn-primary" id="stratbut" style="font-weight: bold;">Get
+                            Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- shop deals -->
+    <!-- <div class="container-fluid" id="shopDeals"></div>
+    <div class="row">
+        <div class="SDimg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <h1>Shop securely for anything you like.</h1>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    </div>
+    <!-- footer -->
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <div id="rowFooter1">
+                <div id="leftArea">
+                    <a href="#!">Help</a>
+                    <a href="#!">Contact us</a>
+                    <a href="#!">Fees</a>
+                    <a href="#!">Security</a>
+                    <a href="#!">Shop</a>
+                </div>
+                <div id="rightArea">
+                    <a href="#!">한국어</a>
+                    <div id="v-line"></div>
+                    <a href="#!"><span class="glyphicon glyphicon-globe"></span></a>
+                </div>
+            </div>
+            <div id="r-line"></div>
+            <div id="rowFooter2">
+                <div id="leftArea">
+                    <a href="#!">About</a>
+                    <a href="#!">Newsroom</a>
+                    <a href="#!">Jobs</a>
+                    <a href="#!">Developers</a>
+                    <a href="#!">Partners</a>
+                </div>
+                <div id="rightArea">
+                    <span>© 1993-2023</span>
+                    <a href="#!">Accessibility</a>
+                    <a href="#!">Cookies</a>
+                    <a href="#!">Privacy</a>
+                    <a href="#!">Legal</a>
+                </div>
+            </div>
+            <div style="font-size: small;">
+                PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution
+                under the Payment Services Act 2019.
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
