@@ -21,11 +21,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* .container {
-    display: flex;
-    justify-content: center;
-}*/
-
 .lg-header {
     display: flex;
     justify-content: center;
@@ -38,43 +33,6 @@ a:hover {
     height: 40px;
     padding: 0;
 }
-
-/* .row {
-    display: flex;
-    justify-content: center;
-}
-
-.loginInput {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.loginInput,
-.loginField {
-    width: 460px;
-}
-
-.loginField *,
-.loginInput *{
-    width: 100%;
-}
-
-.loginInput input {
-    padding: 0.54em 0.25em;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.Forgot {
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.Forgot:hover {
-    color: #337ab7;
-} */
 
 .login-button,
 .back-button {
