@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,48 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="icon" type="source/png" href="source/paypalico.png">
 </head>
+
 <body>
-    <div class="container">
-        <div class="col-md-6 col-sm-12 col-xs-12">
+    <!-- <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="row logoimg">
                 <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" alt="paypal.svg" class="logoimg">
             </div>
-            <div class="row text-center loginInput">
-                <input type="email" name="" id="loginID" placeholder="Email or mobile number">
-            </div>
-            <div class="row text-center loginInput">
-                <input type="password" name="" id="loginPW" placeholder="Password">
+            <div class="row">
+                <div class="loginInput">
+                    <input type="email" name="" id="loginID" placeholder="Email or mobile number">
+                </div>
             </div>
             <div class="row">
-                <a class="Forgot">Forgot Password?</a>
+                <div class="loginInput">
+                    <input type="password" name="" id="loginPW" placeholder="Password">
+                </div>
             </div>
+            <div class="row">
+                <div class="loginField">
+                    <a class="Forgot">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="row">
+                <a href=""></a>
+            </div>
+            <div class="row">
+
+            </div>
+        </div> -->
+    <form class="login-container" action="index.html">
+        <div class="lg-header">
+            <!-- <span class="login-name">Login</span> -->
+            <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg" alt="paypal.svg"
+                class="logoimg">
         </div>
-        
-    </div>
+        <input type="text" id="user_id" placeholder="Typing your id.." name="login" required>
+        <input type="password" id="user_pw" placeholder="Typing your password.." name="login" required>
+        <input type="submit" class="login-button" value="Log In" name="login"></input>
+        <div class="v-line">
+            <span>or</span>
+        </div>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </form>
 </body>
+
 </html>
