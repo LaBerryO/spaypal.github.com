@@ -1,0 +1,88 @@
+.login {
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.bgimage {
+    background: url(https://www.paypalobjects.com/marketing/web/kr/account-selection/kr-account-selection-background-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.register-container {
+    border: 1px solid black;
+    width: 540px;
+    padding: 48px 48px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.register-container h1 {
+    font-size: 1.875rem;
+    font-weight: normal;
+}
+
+.register-container span {
+    font-size: 0.95em;
+    color: grey;
+    font-weight: 500;
+}
+
+.register-container li {
+    font-size: 0.9em;
+}
+
+input[type="radio"] {
+    appearance: none;
+    border: 2px solid;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-top: 0.1em;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    border: 6px solid;
+}
+
+input#buy {
+    border-color: #de0063;
+}
+
+input#receive {
+    border-color: #003087;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.label-title {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.buy .inp-content {
+    color: #de0063;
+}
+
+.receive .inp-content {
+    color: #003087;
+}
+
+.inp-content {
+    margin-left: 5px;
+    width: 390px;
+}
+.next-btn {
+    padding: 13px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    min-width: 128px;
+    max-width: 320px;
+}
