@@ -60,6 +60,7 @@ input#receive {
 
 label {
     margin-bottom: 0;
+    pointer: cursor;
 }
 
 .label-title {
